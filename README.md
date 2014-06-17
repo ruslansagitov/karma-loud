@@ -14,8 +14,7 @@ npm install karma-loud --save-dev
 /* karma.conf.js */
 module.exports = function(config) {
     config.set({
-        frameworks: ['loud'],
-        …
+        frameworks: ['loud']
     });
 };
 ```
