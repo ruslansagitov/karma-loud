@@ -1,0 +1,41 @@
+{
+  "name": "karma-loud",
+  "version": "1.0.0",
+  "description": "Karma plugin for Loud, the web accessibility unit-testing framework",
+  "keywords": [
+    "karma",
+    "karma-plugin",
+    "karma-framework",
+    "loud"
+  ],
+  "author": "Ruslan Sagitov <rs@ruslansagitov.name>",
+  "license": "MIT",
+  "homepage": "https://github.com/ruslansagitov/karma-loud",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ruslansagitov/karma-loud.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ruslansagitov/karma-loud/issues",
+    "email": "rs@ruslansagitov.name"
+  },
+  "main": "./index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/karma start ./test/karma.conf.js --single-run"
+  },
+  "peerDependencies": {
+    "karma": ">= 0.12",
+    "loud": "*"
+  },
+  "devDependencies": {
+    "karma": "^0.12.16",
+    "karma-cli": "0.0.4",
+    "karma-firefox-launcher": "^0.1.3",
+    "karma-jasmine": "^0.1.5",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "loud": "*"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  }
+}
