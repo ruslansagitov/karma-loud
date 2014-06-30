@@ -1,4 +1,4 @@
-# karma-loud
+# karma-loud [![Build Status](https://travis-ci.org/ruslansagitov/karma-loud.svg?branch=master)](https://travis-ci.org/ruslansagitov/karma-loud)
 
 Karma plugin for [Loud][], web accessibility unit-testing framework
 
