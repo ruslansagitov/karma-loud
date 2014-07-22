@@ -21,7 +21,9 @@
   },
   "main": "./index.js",
   "scripts": {
-    "test": "./node_modules/.bin/istanbul test ./node_modules/.bin/karma -- start ./test/karma.conf.js --single-run"
+    "test": "npm run-script lint && npm run-script karma-test",
+    "karma-test": "./node_modules/.bin/istanbul test ./node_modules/.bin/karma -- start ./test/karma.conf.js --single-run",
+    "lint": "eslint index.js test/ && jscs index.js test/ && jshint index.js test/"
   },
   "peerDependencies": {
     "karma": ">= 0.12",
