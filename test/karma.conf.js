@@ -9,6 +9,7 @@ module.exports = function(config) {
         ],
         frameworks: ['jasmine', 'loud'],
         browsers: ['Firefox', 'PhantomJS'],
-        files: ['test.js']
+        files: ['test.js'],
+        reporters: ['dots']
     });
 };
