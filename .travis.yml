@@ -5,7 +5,9 @@ node_js:
 
 env:
   global:
+    # CODECLIMATE_REPO_TOKEN
     - secure: nQDOPzSLiVUwgx/MgZiJczvhC/QJbKTZuqXabd/V5W8vgMVBcP00jsH/MRplh30nm/iwat7ts6CEXjcUnpDOzu5iHWi0wRD8cyD6loWBvzEk3DLAIzG0aMggV3l1VHqHKj+MO3+3CZMorTAFit7P5bKpufRj6W44InqSfDwhkwk=
+    # COVERALLS_REPO_TOKEN
     - secure: Kkes/5Hirc7wmSW3O/h83WG09BqccgL2aFTQNY2F5LEk1Vw5quADErKf0vB0JE15bfa1kFfAlrHRonMHV+w1MVypGePRtbIfNfGlYczcwhmFYYGoZY0mh9SbgYMxagJYK0gLA94Z91yMOCys1hz87IG7FjSHePelnZwz/h/ZX1E=
 
 before_install:
