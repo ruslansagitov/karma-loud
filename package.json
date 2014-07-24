@@ -30,6 +30,7 @@
     "loud": "*"
   },
   "devDependencies": {
+    "git-hooks": "0.0.7",
     "istanbul": "^0.2.13",
     "karma": "^0.12.16",
     "karma-cli": "^0.0.4",
