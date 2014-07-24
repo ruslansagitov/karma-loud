@@ -11,10 +11,6 @@ env:
     - secure: Kkes/5Hirc7wmSW3O/h83WG09BqccgL2aFTQNY2F5LEk1Vw5quADErKf0vB0JE15bfa1kFfAlrHRonMHV+w1MVypGePRtbIfNfGlYczcwhmFYYGoZY0mh9SbgYMxagJYK0gLA94Z91yMOCys1hz87IG7FjSHePelnZwz/h/ZX1E=
 
 before_install:
-  - uname -a
-  - ulimit -a
-  - free -m
-  - df -h
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
 
