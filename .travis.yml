@@ -22,3 +22,12 @@ after_success:
   - ./node_modules/.bin/istanbul cover --report lcovonly ./node_modules/.bin/karma -- start ./test/karma.conf.js --single-run
   - cat ./coverage/lcov.info | ./node_modules/.bin/codeclimate
   - cat ./coverage/lcov.info | ./node_modules/.bin/coveralls
+
+deploy:
+  - provider: npm
+    email: rs@ruslansagitov.name
+    api_key:
+      secure: WDql4nGZUP2PAngl6ixvLDBRj57GwdvWrVEu9PLhwTvGaN36PagiPdnUW0VIkPn6XxR8X9MpghqYrbyRG3Qg4iYi6SOJ2hwr6IVUROcVOWK7iaDev3PlIHUlnknXXpfTtRv1EOsSjDfsOj/s4jP4q1jBo29DmGTrpaPbO3vbeMU=
+    on:
+      tags: true
+      repo: ruslansagitov/karma-loud
