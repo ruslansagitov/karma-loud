@@ -19,9 +19,5 @@ module.exports = function(config) {
 };
 ```
 
-## License
-
-MIT
-
  [Karma]: <http://karma-runner.github.io> "Karma — Testing environment"
  [Loud]: <https://github.com/ruslansagitov/loud> "Loud — Web accessibility unit-testing framework"
