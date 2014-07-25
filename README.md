@@ -1,6 +1,6 @@
 # karma-loud [![Build Status](https://travis-ci.org/ruslansagitov/karma-loud.svg?branch=master)](https://travis-ci.org/ruslansagitov/karma-loud) [![Coverage Status](https://coveralls.io/repos/ruslansagitov/karma-loud/badge.png?branch=master)](https://coveralls.io/r/ruslansagitov/karma-loud?branch=master) [![Code Climate](https://codeclimate.com/github/ruslansagitov/karma-loud.png)](https://codeclimate.com/github/ruslansagitov/karma-loud)
 
-Karma plugin for [Loud][], web accessibility unit-testing framework
+Karma plugin for [Loud][], the web accessibility unit-testing framework
 
 ## Installing
 
