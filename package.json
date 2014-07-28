@@ -30,8 +30,8 @@
     "loud": "*"
   },
   "devDependencies": {
-    "git-hooks": "0.0.7",
-    "istanbul": "^0.2.13",
+    "git-hooks": "^0.0.7",
+    "istanbul": "^0.3.0",
     "karma": "^0.12.16",
     "karma-cli": "^0.0.4",
     "karma-firefox-launcher": "^0.1.3",
