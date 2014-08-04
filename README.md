@@ -1,4 +1,4 @@
-# karma-loud [![Build Status](https://travis-ci.org/ruslansagitov/karma-loud.svg?branch=master)](https://travis-ci.org/ruslansagitov/karma-loud) [![Test Coverage](https://codeclimate.com/github/ruslansagitov/karma-loud/badges/coverage.svg)](https://codeclimate.com/github/ruslansagitov/karma-loud) [![Code Climate](https://codeclimate.com/github/ruslansagitov/karma-loud.png)](https://codeclimate.com/github/ruslansagitov/karma-loud)
+# karma-loud [![Build Status](https://travis-ci.org/ruslansagitov/karma-loud.svg?branch=master)](https://travis-ci.org/ruslansagitov/karma-loud) [![Test Coverage](https://codeclimate.com/github/ruslansagitov/karma-loud/badges/coverage.svg)](https://codeclimate.com/github/ruslansagitov/karma-loud) [![Code Climate](https://codeclimate.com/github/ruslansagitov/karma-loud/badges/gpa.svg)](https://codeclimate.com/github/ruslansagitov/karma-loud)
 
 Karma plugin for [Loud][], the web accessibility unit-testing framework
 
