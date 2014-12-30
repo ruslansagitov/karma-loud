@@ -1,4 +1,6 @@
 /* global Loud, document, describe, it, beforeEach, afterEach, expect */
+'use strict';
+
 describe('karma-loud', function() {
     var loud, button;
 
