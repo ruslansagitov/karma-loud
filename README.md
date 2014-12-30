@@ -1,6 +1,6 @@
 # karma-loud [![Build Status](https://travis-ci.org/ruslansagitov/karma-loud.svg?branch=master)](https://travis-ci.org/ruslansagitov/karma-loud) [![Test Coverage](https://codeclimate.com/github/ruslansagitov/karma-loud/badges/coverage.svg)](https://codeclimate.com/github/ruslansagitov/karma-loud) [![Code Climate](https://codeclimate.com/github/ruslansagitov/karma-loud/badges/gpa.svg)](https://codeclimate.com/github/ruslansagitov/karma-loud)
 
-Karma plugin for [Loud][], the web accessibility unit-testing framework
+Karma plugin for [Loud][], web accessibility testing helper
 
 ## Installing
 
@@ -20,4 +20,4 @@ module.exports = function(config) {
 ```
 
  [Karma]: <http://karma-runner.github.io> "Karma — Testing environment"
- [Loud]: <https://github.com/ruslansagitov/loud> "Loud — Web accessibility unit-testing framework"
+ [Loud]: <https://github.com/ruslansagitov/loud> "Loud — Web accessibility testing helper"
