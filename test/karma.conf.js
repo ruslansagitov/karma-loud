@@ -1,16 +1,24 @@
 'use strict';
 
 module.exports = function(config) {
-    config.set({
-        plugins: [
+    var browsers = [],
+        plugins = [
             'karma-jasmine',
-            'karma-firefox-launcher',
-            'karma-phantomjs-launcher',
-
             require('../index')
-        ],
+        ];
+
+    if (process.env.KARMA_BROWSERS) {
+        browsers = process.env.KARMA_BROWSERS.split(',');
+
+        browsers.forEach(function(name) {
+            plugins.push('karma-' + name.toLowerCase() + '-launcher');
+        });
+    }
+
+    config.set({
+        plugins: plugins,
         frameworks: ['jasmine', 'loud'],
-        browsers: ['Firefox', 'PhantomJS'],
+        browsers: browsers,
         files: ['test.js'],
         reporters: ['dots']
     });
