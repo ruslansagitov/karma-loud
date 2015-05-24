@@ -30,9 +30,9 @@
     "loud": "*"
   },
   "devDependencies": {
-    "istanbul": "^0.3.5",
-    "karma": "^0.12.28",
-    "karma-jasmine": "^0.3.3",
+    "istanbul": "^0.3.14",
+    "karma": "^0.12.32",
+    "karma-jasmine": "^0.3.5",
     "loud": "*"
   },
   "engines": {
