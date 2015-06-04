@@ -22,8 +22,9 @@
   "main": "./index.js",
   "scripts": {
     "test": "npm run-script lint && npm run-script karma-test",
-    "karma-test": "istanbul test karma -- start ./test/karma.conf.js --single-run",
-    "lint": "eslint index.js test/ && jscs index.js test/"
+    "karma-test": "karma start ./test/karma.conf.js --single-run",
+    "lint": "eslint index.js test/ && jscs index.js test/",
+    "coverage": "istanbul cover karma -- start ./test/karma.conf.js --single-run"
   },
   "peerDependencies": {
     "karma": ">= 0.12",
