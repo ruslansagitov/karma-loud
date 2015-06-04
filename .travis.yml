@@ -9,6 +9,8 @@ env:
   global:
     # CODECLIMATE_REPO_TOKEN
     - secure: nQDOPzSLiVUwgx/MgZiJczvhC/QJbKTZuqXabd/V5W8vgMVBcP00jsH/MRplh30nm/iwat7ts6CEXjcUnpDOzu5iHWi0wRD8cyD6loWBvzEk3DLAIzG0aMggV3l1VHqHKj+MO3+3CZMorTAFit7P5bKpufRj6W44InqSfDwhkwk=
+    # COVERALLS_REPO_TOKEN
+    - secure: A8QcfWUTAQHzjHV3/bxQwrO6+wlsAl/MAI/DAnbWtM37Z1Cwo6GfdxyP3dYMlz3TPNPvcRVpdwNzi5coenrIURgddPITXOy+Z/2Q8aWF9CQQaLxgaheFqGjZ8rh6CEUGZ6n0s38dv+mTB3xrvNPXLntARZmc1LwylGxWWxVIzFM=
 
 before_install:
   - export DISPLAY=:99.0
@@ -21,9 +23,10 @@ before_script:
   - export KARMA_BROWSERS=Firefox,PhantomJS
 
 after_success:
-  - npm install codeclimate-test-reporter@^0.0.4
+  - npm install codeclimate-test-reporter@^0.0.4 coveralls@^2.11.2
   - ./node_modules/.bin/istanbul cover --report lcovonly ./node_modules/.bin/karma -- start ./test/karma.conf.js --single-run
   - cat ./coverage/lcov.info | ./node_modules/.bin/codeclimate
+  - cat ./coverage/lcov.info | ./node_modules/.bin/coveralls
 
 deploy:
   - provider: npm
