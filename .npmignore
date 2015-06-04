@@ -1,4 +1,5 @@
 test
+appveyor.yml
 .editorconfig
 .eslintrc
 .jscsrc
