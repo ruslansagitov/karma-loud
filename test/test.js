@@ -1,15 +1,10 @@
-/* global loud, document, describe, it, beforeEach, afterEach, expect */
+/* global loud, document, describe, it, beforeEach, expect */
 'use strict';
 
 describe('karma-loud', function() {
     beforeEach(function() {
         this.button = document.createElement('button');
         this.button.innerHTML = 'Join';
-        document.body.appendChild(this.button);
-    });
-
-    afterEach(function() {
-        document.body.removeChild(this.button);
     });
 
     it('works', function() {
