@@ -1,6 +1,7 @@
 doc
 test
 appveyor.yml
+CONTRIBUTING.md
 .editorconfig
 .eslintrc
 .jscsrc
