@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "istanbul": "^0.3.14",
-    "karma": "^0.12.32",
+    "karma": "^0.12.36",
     "karma-jasmine": "^0.3.5",
     "loud": "*"
   },
