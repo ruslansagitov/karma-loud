@@ -1,3 +1,5 @@
+build
+coverage
 doc
 test
 appveyor.yml
