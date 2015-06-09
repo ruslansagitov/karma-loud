@@ -2,20 +2,18 @@
 'use strict';
 
 describe('karma-loud', function() {
-    var button;
-
     beforeEach(function() {
-        button = document.createElement('button');
-        button.innerHTML = 'Join';
-        document.body.appendChild(button);
+        this.button = document.createElement('button');
+        this.button.innerHTML = 'Join';
+        document.body.appendChild(this.button);
     });
 
     afterEach(function() {
-        document.body.removeChild(button);
+        document.body.removeChild(this.button);
     });
 
     it('works', function() {
-        expect(loud.say(button)).toEqual([
+        expect(loud.say(this.button)).toEqual([
             'Join', 'button'
         ]);
     });
