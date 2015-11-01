@@ -29,13 +29,13 @@
     "doc": "sphinx-build -b html doc/ build/doc/"
   },
   "peerDependencies": {
-    "karma": ">= 0.12",
+    "karma": ">= 0.13",
     "loud": "*"
   },
   "devDependencies": {
-    "istanbul": "^0.3.14",
-    "karma": "^0.12.36",
-    "karma-jasmine": "^0.3.5",
+    "istanbul": "^0.4.0",
+    "karma": "^0.13.14",
+    "karma-jasmine": "^0.3.6",
     "loud": "*"
   },
   "engines": {
