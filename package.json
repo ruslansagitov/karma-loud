@@ -21,24 +21,25 @@
   },
   "main": "./index.js",
   "scripts": {
-    "test": "npm run-script lint && npm run-script check-writing && npm run-script karma-test",
+    "test": "npm run-script lint && npm run-script check-writing && npm run-script security && npm run-script karma-test",
     "karma-test": "karma start ./test/karma.conf.js --single-run",
-    "lint": "eslint index.js test/ && jscs index.js test/",
+    "lint": "eslint . && jscs .",
     "check-writing": "write-good README.md doc/index.rst && write-good CONTRIBUTING.md --no-tooWordy",
+    "security": "nsp check",
     "coverage": "istanbul cover karma -- start ./test/karma.conf.js --single-run",
     "doc": "sphinx-build -b html doc/ build/doc/"
   },
   "peerDependencies": {
-    "karma": ">= 0.12",
+    "karma": ">= 0.13",
     "loud": "*"
   },
   "devDependencies": {
-    "istanbul": "^0.3.14",
-    "karma": "^0.12.36",
-    "karma-jasmine": "^0.3.5",
+    "istanbul": "^0.4.0",
+    "karma": "^0.13.14",
+    "karma-jasmine": "^0.3.6",
     "loud": "*"
   },
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 4.0.0"
   }
 }
