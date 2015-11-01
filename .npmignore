@@ -6,6 +6,7 @@ appveyor.yml
 CONTRIBUTING.md
 .editorconfig
 .eslintrc
+.eslintignore
 .jscsrc
 .jshintrc
 .npmignore

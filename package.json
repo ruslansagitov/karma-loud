@@ -23,7 +23,7 @@
   "scripts": {
     "test": "npm run-script lint && npm run-script check-writing && npm run-script karma-test",
     "karma-test": "karma start ./test/karma.conf.js --single-run",
-    "lint": "eslint index.js test/ && jscs index.js test/",
+    "lint": "eslint . && jscs .",
     "check-writing": "write-good README.md doc/index.rst && write-good CONTRIBUTING.md --no-tooWordy",
     "coverage": "istanbul cover karma -- start ./test/karma.conf.js --single-run",
     "doc": "sphinx-build -b html doc/ build/doc/"
