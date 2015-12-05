@@ -19,7 +19,10 @@ module.exports = function(config) {
         plugins: plugins,
         frameworks: ['jasmine', 'loud'],
         browsers: browsers,
-        files: ['test.js'],
+        files: [
+            require.resolve('es5-shim'),
+            'test.js'
+        ],
         reporters: ['dots']
     });
 };
