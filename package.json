@@ -29,16 +29,12 @@
     "coverage": "istanbul cover karma -- start ./test/karma.conf.js --single-run",
     "doc": "sphinx-build -b html doc/ build/doc/"
   },
-  "peerDependencies": {
-    "karma": ">= 0.13",
-    "loud": "*"
-  },
   "devDependencies": {
     "es5-shim": "^4.3.1",
     "istanbul": "^0.4.1",
     "karma": "^0.13.15",
     "karma-jasmine": "^0.3.6",
-    "loud": "*"
+    "loud": "^0.8.2"
   },
   "engines": {
     "node": ">= 4.0.0"
