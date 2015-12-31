@@ -7,8 +7,6 @@ describe('karma-loud', function() {
     });
 
     it('works', function() {
-        expect(loud.say(this.button)).toEqual([
-            'Join', 'button'
-        ]);
+        expect(loud.say(this.button)).toEqual(['Join', 'button']);
     });
 });
