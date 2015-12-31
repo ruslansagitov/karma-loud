@@ -1,4 +1,3 @@
-/* global loud, document, describe, it, beforeEach, expect */
 'use strict';
 
 describe('karma-loud', function() {
