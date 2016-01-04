@@ -17,11 +17,12 @@ cache:
     - node_modules
 
 before_install:
+  - npm install --global npm@^3.5.3
   - npm install --global eslint@^1.10.3 jscs@^2.7.0 write-good@^0.9.1 nsp@^2.2.0
   - npm install --global karma-cli@^0.1.2
 
 before_script:
-  - npm install karma-firefox-launcher@^0.1.7 karma-phantomjs-launcher@^0.2.2
+  - npm install karma-firefox-launcher@^0.1.7 karma-phantomjs-launcher@^0.2.2 phantomjs@^1.9.19
   - export KARMA_BROWSERS=Firefox,PhantomJS
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
