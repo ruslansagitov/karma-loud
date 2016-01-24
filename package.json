@@ -31,11 +31,11 @@
   },
   "devDependencies": {
     "es5-shim": "^4.4.1",
-    "istanbul": "^0.4.1",
+    "istanbul": "^0.4.2",
     "jasmine-core": "^2.4.1",
-    "karma": "0.13.15",
+    "karma": "^0.13.19",
     "karma-jasmine": "^0.3.6",
-    "loud": "^0.8.3"
+    "loud": "^0.8.5"
   },
   "engines": {
     "node": ">= 4.0.0"
