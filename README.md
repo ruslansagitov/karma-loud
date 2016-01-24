@@ -5,7 +5,7 @@
 ## Getting Started
 
 ```
-npm install karma-loud --save-dev
+npm install karma loud karma-loud --save-dev
 ```
 
 ```javascript
