@@ -24,10 +24,9 @@
     "test": "npm run-script lint && npm run-script check-writing && npm run-script security && npm run-script karma-test",
     "karma-test": "karma start ./test/karma.conf.js --single-run",
     "lint": "eslint . && jscs .",
-    "check-writing": "write-good README.md doc/index.rst && write-good CONTRIBUTING.md --no-tooWordy",
+    "check-writing": "write-good README.md && write-good CONTRIBUTING.md --no-tooWordy",
     "security": "nsp check",
-    "coverage": "istanbul cover karma -- start ./test/karma.conf.js --single-run",
-    "doc": "sphinx-build -b html doc/ build/doc/"
+    "coverage": "istanbul cover karma -- start ./test/karma.conf.js --single-run"
   },
   "devDependencies": {
     "es5-shim": "^4.4.1",
