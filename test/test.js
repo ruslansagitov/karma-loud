@@ -1,3 +1,4 @@
+/* globals loud, document */
 'use strict';
 
 describe('karma-loud', function() {
