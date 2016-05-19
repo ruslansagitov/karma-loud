@@ -7,6 +7,5 @@ CONTRIBUTING.md
 .editorconfig
 .eslintrc
 .eslintignore
-.jshintrc
 .npmignore
 .travis.yml
