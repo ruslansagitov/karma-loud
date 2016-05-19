@@ -29,14 +29,14 @@
     "coverage": "istanbul cover karma -- start ./test/karma.conf.js --single-run"
   },
   "devDependencies": {
-    "es5-shim": "^4.4.1",
-    "istanbul": "^0.4.2",
+    "es5-shim": "^4.5.8",
+    "istanbul": "^0.4.3",
     "jasmine-core": "^2.4.1",
-    "karma": "^0.13.19",
-    "karma-jasmine": "^0.3.6",
+    "karma": "^0.13.22",
+    "karma-jasmine": "^1.0.2",
     "loud": "^0.8.5"
   },
   "engines": {
-    "node": ">= 4.0.0"
+    "node": ">=4"
   }
 }
