@@ -3,6 +3,8 @@ language: node_js
 node_js:
   - 12
 
+services:
+  - xvfb
 sudo: false
 
 env:
@@ -18,8 +20,6 @@ cache:
 
 before_script:
   - export KARMA_BROWSERS=Firefox,PhantomJS
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
 
 after_success:
   - ./node_modules/.bin/istanbul cover --report lcovonly ./node_modules/.bin/karma -- start ./test/karma.conf.js --single-run
