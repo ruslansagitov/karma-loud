@@ -1,6 +1,6 @@
 'use strict';
 
-let loud = require('../index');
+const loud = require('../index');
 
 module.exports = function(config) {
     let browsers = [],
@@ -12,9 +12,9 @@ module.exports = function(config) {
     if (process.env.KARMA_BROWSERS) {
         browsers = process.env.KARMA_BROWSERS.split(',');
 
-        browsers.forEach(name => {
+        for (let name of browsers) {
             plugins.push(`karma-${name.toLowerCase()}-launcher`);
-        });
+        }
     }
 
     config.set({

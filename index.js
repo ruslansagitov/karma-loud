@@ -1,22 +1,22 @@
 'use strict';
 
-let PATH = require('path');
+const path = require('path');
 
-let createPattern = function(path) {
+function createPattern(path) {
     return {
         pattern: path,
         included: true,
         served: true,
         watched: false
     };
-};
+}
 
-let initLoud = function(files) {
-    let resolvedPath = PATH.dirname(require.resolve('loud')),
-        distPath = PATH.join(resolvedPath, '../dist');
+function initLoud(files) {
+    let resolvedPath = path.dirname(require.resolve('loud'));
+    let distPath = path.join(resolvedPath, '../dist');
 
-    files.unshift(createPattern(PATH.join(distPath, 'loud.js')));
-};
+    files.unshift(createPattern(path.join(distPath, 'loud.js')));
+}
 
 initLoud.$inject = ['config.files'];
 
