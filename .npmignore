@@ -8,3 +8,4 @@ CONTRIBUTING.md
 .eslintrc.json
 .eslintignore
 .npmignore
+.nyc_output

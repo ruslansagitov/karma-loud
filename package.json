@@ -25,23 +25,18 @@
     "karma-test": "karma start ./test/karma.conf.js --single-run",
     "lint": "eslint .",
     "check-writing": "write-good README.md && write-good CONTRIBUTING.md --no-tooWordy",
-    "coverage": "istanbul cover karma -- start ./test/karma.conf.js --single-run"
+    "coverage": "nyc --reporter=lcov npm run karma-test"
   },
   "devDependencies": {
-    "codeclimate-test-reporter": "^0.5.1",
-    "coveralls": "^3.1.1",
     "eslint": "^8.18.0",
-    "istanbul": "^0.4.5",
     "jasmine-core": "^4.2.0",
     "karma": "^6.4.0",
     "karma-chrome-launcher": "^3.1.1",
     "karma-cli": "^2.0.0",
     "karma-firefox-launcher": "^2.1.2",
-    "karma-ie-launcher": "^1.0.0",
     "karma-jasmine": "^5.1.0",
-    "karma-phantomjs-launcher": "^1.0.4",
     "loud": "^0.9.2",
-    "phantomjs-prebuilt": "^2.1.16",
+    "nyc": "^15.1.0",
     "write-good": "^1.0.8"
   },
   "engines": {

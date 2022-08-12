@@ -1,0 +1,81 @@
+name: test
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      DISPLAY: ':0'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Cache
+        uses: actions/cache@v3
+        id: cache-npm
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+
+      - name: NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          registry-url: https://registry.npmjs.org/
+
+      - name: Install
+        run: |
+          node --version
+          npm --version
+          npm ci
+
+      - name: Lint
+        run: |
+          npm run lint
+          npm run check-writing
+
+      - name: Build
+        run: npm run build
+
+      - name: Install Chrome
+        uses: browser-actions/setup-chrome@latest
+
+      - name: Install Firefox
+        uses: browser-actions/setup-firefox@latest
+
+      - name: Start Xvfb
+        run: |
+          sudo apt-get install xvfb && \
+          Xvfb $DISPLAY &> /dev/null &
+
+      - name: Test
+        run: npm run coverage
+        env:
+          KARMA_BROWSERS: Firefox,Chrome
+
+      - name: Coveralls
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path-to-lcov: ${{ github.workspace }}/coverage/lcov.info
+
+      - name: CodeClimate
+        uses: paambaati/codeclimate-action@v3.0.0
+        env:
+          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+        with:
+          coverageLocations: ${{ github.workspace }}/coverage/lcov.info:lcov
