@@ -2,10 +2,9 @@ build
 coverage
 doc
 test
-appveyor.yml
 CONTRIBUTING.md
+.github
 .editorconfig
-.eslintrc
+.eslintrc.json
 .eslintignore
 .npmignore
-.travis.yml
