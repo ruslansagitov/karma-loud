@@ -1,9 +1,9 @@
 'use strict';
 
-var loud = require('../index');
+let loud = require('../index');
 
 module.exports = function(config) {
-    var browsers = [],
+    let browsers = [],
         plugins = [
             'karma-jasmine',
             loud
@@ -12,15 +12,15 @@ module.exports = function(config) {
     if (process.env.KARMA_BROWSERS) {
         browsers = process.env.KARMA_BROWSERS.split(',');
 
-        browsers.forEach(function(name) {
-            plugins.push('karma-' + name.toLowerCase() + '-launcher');
+        browsers.forEach(name => {
+            plugins.push(`karma-${name.toLowerCase()}-launcher`);
         });
     }
 
     config.set({
-        plugins: plugins,
+        plugins,
         frameworks: ['jasmine', 'loud'],
-        browsers: browsers,
+        browsers,
         files: ['test.js'],
         reporters: ['dots']
     });

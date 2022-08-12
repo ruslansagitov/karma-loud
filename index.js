@@ -1,8 +1,8 @@
 'use strict';
 
-var PATH = require('path');
+let PATH = require('path');
 
-var createPattern = function(path) {
+let createPattern = function(path) {
     return {
         pattern: path,
         included: true,
@@ -11,8 +11,8 @@ var createPattern = function(path) {
     };
 };
 
-var initLoud = function(files) {
-    var resolvedPath = PATH.dirname(require.resolve('loud')),
+let initLoud = function(files) {
+    let resolvedPath = PATH.dirname(require.resolve('loud')),
         distPath = PATH.join(resolvedPath, '../dist');
 
     files.unshift(createPattern(PATH.join(distPath, 'loud.js')));
