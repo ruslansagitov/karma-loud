@@ -1,6 +1,6 @@
 {
   "name": "karma-loud",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Karma plugin for Loud, web accessibility testing helper",
   "keywords": [
     "karma",
