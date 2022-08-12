@@ -12,8 +12,8 @@ function createPattern(path) {
 }
 
 function initLoud(files) {
-    let resolvedPath = path.dirname(require.resolve('loud'));
-    let distPath = path.join(resolvedPath, '../dist');
+    const resolvedPath = path.dirname(require.resolve('loud'));
+    const distPath = path.join(resolvedPath, '../dist');
 
     files.unshift(createPattern(path.join(distPath, 'loud.js')));
 }
