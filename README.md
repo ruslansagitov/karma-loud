@@ -1,4 +1,4 @@
-# karma-loud [![Build Status](https://github.com/ruslansagitov/karma-loud/actions/workflows/test.yaml/badge.svg)](https://github.com/ruslansagitov/karma-loud/actions/workflows/test.yaml) [![Coverage Status](https://coveralls.io/repos/ruslansagitov/karma-loud/badge.svg)](https://coveralls.io/r/ruslansagitov/karma-loud) [![Code Climate](https://codeclimate.com/github/ruslansagitov/karma-loud/badges/gpa.svg)](https://codeclimate.com/github/ruslansagitov/karma-loud)
+# karma-loud [![Build Status](https://github.com/ruslansagitov/karma-loud/actions/workflows/test.yaml/badge.svg)](https://github.com/ruslansagitov/karma-loud/actions/workflows/test.yaml) [![Coverage Status](https://coveralls.io/repos/ruslansagitov/karma-loud/badge.svg)](https://coveralls.io/r/ruslansagitov/karma-loud)
 
 [Karma][] plugin for [Loud][], web accessibility testing helper
 
